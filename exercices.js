@@ -91,7 +91,8 @@ var result =11;
 //   console.log(resultat);
 //
 //
-//
+//(var i = (( this % i + i) % i;
+	// return m < 0 ? m + Math.abs(n) : m;
 
 
 
@@ -100,7 +101,8 @@ var result =11;
 
       Crée une variable contenant un mot au singulier
       crée une variable qui contient le nombre dont tu en dispose
-      crée une variable qui contiendra le résultat
+      crée une variable qui contiendra le résultat(var i = (( this % i + i) % i;
+	return m < 0 ? m + Math.abs(n) : m;
       Faire une condition pour savoir si il faut rajouter un "s" ou pas
 
   Le résultat doit être par exemple : "Je possède 4 pommes"
@@ -156,9 +158,128 @@ var result =11;
 //
 //
 
-var vitesse = geResults(distance,temps){
-   return  var result=distance/temps;
+// var vitesse = geResults(distance,temps){
+//    return  var result=distance/temps;
+// }
+//
+//
+// console.log(result);
+
+
+/*les boucles*/
+
+
+// for(var i=0;i<6;i++) {
+//   if (i % 2 == 0)   {
+//     console.log(i+"est pair");
+//   }
+// }
+//
+
+
+//
+// for(var i=0;i<10;i++) {
+//   if(i == 2) {
+//     console.log(i+"*9=18");
+//   }
+// }
+//
+//
+//
+// for(var i=0;i<100;i++){
+// console.log(i);
+//   switch (i) {
+//     case  i >90 :
+//     console.log("le grade est A");
+//     break;
+//     case  i >80 :
+//     console.log("le grade est B");
+//     break;
+//     case  i >70 :
+//     console.log("le grade est C");
+//     break;
+//     case  i >65 :
+//     console.log("le grade est D");
+//     break;
+//     default:
+//     console.log("le grade est F");
+//   }
+// }
+// console.log("Pour 82 points vous avez le grade B");
+//
+//
+
+// for(var i=0;i<5;i++) {
+//   console.log("*".repeat(i));
+// }
+//
+//
+//
+
+// Écrire une boucle qui va itérer de 0 à 100
+// Écrire une fonction qui va retourner des grades selon les scores reçu
+//     si le score au dessus de 90 le grade est A
+//     si le score au dessus de 80 le grade est B
+//     si le score au dessus de 70 le grade est C
+//     si le score au dessus de 65 le grade est D
+//     si le score n'entre pas dans ces catégories le grade est F
+//
+// afficher dans la console le résultat par exemple : "Pour 82 points vous avez le grade B".
+
+
+
+
+
+
+
+// Exercice : addition
+//     crée un tableau qui contient les valeurs suivantes : 1, 2, 3, 4, 5, 6, 7, 8, 9
+//     faire une boucle qui permet d'additioner toutes ces valeurs
+//
+//  let Montableau =[1,2,3,5,6,7,8,9];
+// for (i = 0; i < Montableau.length; i++) {
+// tot+=Number(tab_cout[i]);
+// }
+
+
+//
+// var Montableau = new Array(1,2,3,4,5,6,7,8,9);
+// Montableau.length =9;
+// Montableau[4]=[3];
+// print(Montableau.length);
+
+
+//
+// var Myframe = new Array(1,2,3,4,5,6,7,8,9);
+// var add = 0;
+// console.log(Myframe);
+// for(var i=0;i<Myframe.length;i++) {
+//  add = add + Myframe[i];
+// }
+//
+// console.log(add);
+//
+// // j'ai créer une variable add pour ajouter le résultat obtenu cad addition en récupérant l'index du tableau
+// //console.log avec résultat de la boucle
+
+
+// var Mypeople = ["Depardieu","Almeric","Lindon"];
+// var Nombre =[1,2,3];
+// console.log(Mypeople);
+// for(var i = 0; i < Mypeople.length; i++){
+// console.log("le numéro"+ Nombre[i]+ "est"+Mypeople[i]);
+// }
+//
+// Exercice : clone
+//
+//     crée un tableau qui contetient les valeurs suivantes : "Mario", "Luigi", "Peach"
+//     dupliquer le tableau et y ajouter "Bowser"
+
+var Mytable =["Mario","Luigi","Peach"];
+var Mytable2= [];
+for (var i = 0; i < Mytable.length; i++) {
+var clone = Mytable[i]; Mytable2.push(clone);
 }
-
-
-console.log(result);
+Mytable2.push('Bowser');
+console.log(Mytable);
+console.log(Mytable2);
