@@ -283,7 +283,7 @@ var result =11;
 
 //Le pendu REVISION
 
-// 
+//
 // var Myletter =["B","O","N","J","O","U","R"];
 // var Myletter2=['_','_','_','_','_','_','_'];
 //
