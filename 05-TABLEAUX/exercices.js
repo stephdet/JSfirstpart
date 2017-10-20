@@ -37,3 +37,10 @@
 // Mytable2.push('Bowser');
 // console.log(Mytable);
 // console.log(Mytable2);
+
+
+var lolo =["un","deux","trois"];
+
+var un=lolo[0];
+var deux=lolo[1];
+var trois=lolo[3];

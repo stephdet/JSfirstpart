@@ -69,3 +69,24 @@
 // for (i = 0; i < Montableau.length; i++) {
 // tot+=Number(tab_cout[i]);
 // }
+
+
+
+
+
+
+// for(var i=0;i<5;i++) {
+//   console.log("*".repeat(i));
+// }
+//
+//
+
+
+// Pyramide
+
+
+var lettre="*";
+for(var i=0;i<5;i++) {
+console.log("*".repeat(i));
+
+}

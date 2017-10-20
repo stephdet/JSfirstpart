@@ -41,3 +41,23 @@
 //
 //
 // console.log(result);
+
+var x = 10;
+
+function créerFonction1() {
+  var x = 20;
+  return new Function("return x;"); // ici |x| fait référence au |x| global
+}
+
+function créerFonction2() {
+  var x = 20;
+  function f() {
+    return x; // ici |x| fait référence au |x| local juste avant
+  }
+  return f;
+}
+
+var f1 = créerFonction1();
+console.log(f1());          // 10
+var f2 = créerFonction2();
+console.log(f2());          // 20
