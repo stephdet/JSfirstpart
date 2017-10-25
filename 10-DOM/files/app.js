@@ -7,7 +7,6 @@ document.body.classList.remove('bg-aqua');
 document.body.classList.add('bg-maroon');
 
 
-
 //- sélectioner first-paragraph
 //- lui retirer les classes 'bg-lime' et 'gray'
 //- lui ajouter la class 'aqua'
@@ -59,8 +58,6 @@ document.querySelectorAll('pre').forEach((element)  => {
 });
 
 
-
-
 //   var allparagrap=document.querySelectorALL("p");=> {
 //   console.log(allparagrap);
 //   longueur =allparagrap.lenght;
@@ -71,7 +68,6 @@ document.querySelectorAll('pre').forEach((element)  => {
 // }
 
 
-
 document.querySelector('h3').innerHTML="<em>Itelic title ! yeah !</em>";
 
 document.querySelector('h2').innerHTML="<strong>HTML doens't work !</strong>";
@@ -79,20 +75,27 @@ document.querySelector('h2').innerHTML="<strong>HTML doens't work !</strong>";
 
 // EXERCICE 4 : Création et suppression de plusieurs éléments
 
+var parent =document.querySelector('ul');
 var Newli=document.createElement('li');
-element.innerHTML="Mon meilleur ami est <a href='http://www.google.com'>Google</a>";
+Newli.innerHTML="Mon meilleur ami est <a href='http://www.google.com'>Google</a>";
 document.querySelector('ul').appendChild(Newli);
-LiNew.querySelector('a').style.color:'#FF3333';
+parent.appendChild(Newli);
 
+firstLien = document.querySelector('ul').querySelector("a");
+firstLien.style.color ="red";
 
+// EXERCICE 4 :Associer élémént tableau au li
 
+Myol =document.querySelector("ol");
 
-var ol=document.querySelector('ol');
-[...ol.children].forEach((child) =>ol.removeChild(child));
-var myArray=["Silent Teacher","Code Monkey","CodeCombat"]
-//faire une boucle sur tous les enfants du tableau précédement crée
-for (var i = 0; i <myArray.length; i++) {
-  var element = document.createElement("li");
-  element.innerHTML=MyArray[i];
-  ol.appendChild(element);
+while (Myol.firstChild) {
+  //supprimer chaque enfant de ol
+  Myol.removeChild(Myol.firstChild);
+}
+var Newsdata =["Silent Teacher","Code Monkey","Code Combat"];
+for (var i = 0; i < Newsdata.length; i++) {
+newelement= document.createElement('li');
+Myol.appendChild(newelement);
+newelement.innerHTML=Newsdata[i];
+
 }

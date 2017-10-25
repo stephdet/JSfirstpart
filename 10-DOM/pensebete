@@ -5,7 +5,8 @@ document.getElementsByClassName()
 document.getElementsByTagName()
 document.querySelector()
 document.querySelectorAll()
-Création d'éléments
+
+//Création d'éléments
 document.createElement()
 element.appendChild()
 
