@@ -8,6 +8,11 @@ body {
 .shadow {
 	text-shadow: 1px 1px rgba(0,0,0, .5);
 }
+
+
+
+
+
 /* from : https://github.com/mrmrs/colors */
 /* Backgrounds */
 .bg-navy { background-color: #001F3F; }
@@ -45,4 +50,4 @@ body {
 .silver { color: #DDDDDD; }
 .gray { color: #AAAAAA; }
 .black { color: #111111; }
-/* Border colors 
+/* Border colors
