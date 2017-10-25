@@ -95,7 +95,6 @@ while (Myol.firstChild) {
 var Newsdata =["Silent Teacher","Code Monkey","Code Combat"];
 for (var i = 0; i < Newsdata.length; i++) {
 newelement= document.createElement('li');
-Myol.appendChild(newelement);
-newelement.innerHTML=Newsdata[i];
-
-}
+  Myol.appendChild(newelement);
+  newelement.innerHTML=Newsdata[i];
+  }
